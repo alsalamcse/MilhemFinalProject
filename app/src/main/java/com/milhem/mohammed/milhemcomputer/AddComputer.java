@@ -32,12 +32,16 @@ public class AddComputer extends AppCompatActivity {
          String s=etSpace.getText().toString();
           String r=etRam.getText().toString();
 
+          Double p1=Double.parseDouble(p);
+          Double s1=Double.parseDouble(s);
+          Double r1=Double.parseDouble(r);
+
           MyComputer myComputer=new MyComputer();
 
           myComputer.setKind(k);
-          myComputer.setPrice(p);
-          myComputer.setSpace(s);
-          myComputer.setRam(r);
+          myComputer.setPrice(p1);
+          myComputer.setSpace(s1);
+          myComputer.setRam(r1);
           MyComputerTable myComputerTable=new MyComputerTable(this);
           myComputerTable.AddComputer(myComputer);
             Intent intent = new Intent(getBaseContext(), AllComputers.class);

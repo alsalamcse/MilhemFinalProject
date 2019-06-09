@@ -6,16 +6,16 @@ import java.nio.file.WatchEvent;
 
 public class MyComputer {
     private String Kind;
-    private int Price;
-    private int Space;
-    private int Ram;
+    private double Price;
+    private double Space;
+    private double Ram;
     private long _id;
 
     public MyComputer() {
 
     }
 
-    public MyComputer(String Kind, int Price, int Space, int Ram) {
+    public MyComputer(String Kind, double Price, double Space, double Ram) {
         this.Kind = Kind;
         this.Price = Price;
         this.Space = Space;
@@ -24,7 +24,7 @@ public class MyComputer {
     }
 
 
-    public MyComputer(String Kind, int Price, int Space, int Ram, long _id) {
+    public MyComputer(String Kind, double Price, double Space, double Ram, long _id) {
         this.Kind = Kind;
         this.Price = Price;
         this.Space = Space;
@@ -37,15 +37,15 @@ public class MyComputer {
         return Kind;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return Price;
     }
 
-    public int getSpace() {
+    public double getSpace() {
         return Space;
     }
 
-    public int getRam() {
+    public double getRam() {
         return Ram;
     }
 
@@ -57,15 +57,15 @@ public class MyComputer {
         this.Kind = kind;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.Price = price;
     }
 
-    public void setSpace(int space) {
+    public void setSpace(double space) {
         this.Space = space;
     }
 
-    public void setRam(int ram) {
+    public void setRam(double ram) {
         this.Ram = ram;
     }
 
