@@ -27,6 +27,19 @@ public class AddComputer extends AppCompatActivity {
     }
     public void onClick(View v) {
         if (v == btnSave) {
+          String k=etKind.getText().toString();
+          String p=etPrice.getText().toString();
+         String s=etSpace.getText().toString();
+          String r=etRam.getText().toString();
+
+          MyComputer myComputer=new MyComputer();
+
+          myComputer.setKind(k);
+          myComputer.setPrice(p);
+          myComputer.setSpace(s);
+          myComputer.setRam(r);
+          MyComputerTable myComputerTable=new MyComputerTable(this);
+          myComputerTable.AddComputer(myComputer);
             Intent intent = new Intent(getBaseContext(), AllComputers.class);
             startActivity(intent);
 }}}

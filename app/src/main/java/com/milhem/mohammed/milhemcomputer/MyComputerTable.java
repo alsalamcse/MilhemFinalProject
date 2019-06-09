@@ -1,8 +1,12 @@
+package com.milhem.mohammed.milhemcomputer;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.milhem.mohammed.milhemcomputer.MyComputer;
 
 import java.util.ArrayList;
 
