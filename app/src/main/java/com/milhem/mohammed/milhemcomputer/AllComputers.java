@@ -48,7 +48,9 @@ public class AllComputers extends AppCompatActivity {
         ListV.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
                 Toast.makeText(AllComputers.this, "position:" + position, Toast.LENGTH_SHORT).show();
+
                 MyComputer m = (MyComputer) parent.getItemAtPosition(position);
                 Toast.makeText(AllComputers.this, "Computer:" + m.getKind(), Toast.LENGTH_SHORT).show();
                 Intent i = new
