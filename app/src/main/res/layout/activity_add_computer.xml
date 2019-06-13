@@ -7,7 +7,7 @@
     tools:context=".AddComputer">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Computer's Kind"
-            android:inputType="text|textPersonName" />
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/etPrice"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Computer's Price"
-            android:inputType="textPersonName" />
+            android:inputType="number" />
 
         <EditText
             android:id="@+id/etRam"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Computer's Ram(GB)"
-            android:inputType="textPersonName" />
+            android:inputType="number" />
 
         <EditText
             android:id="@+id/etSpace"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Computer's Space"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName|number" />
 
         <Button
             android:id="@+id/btnSave"
@@ -62,9 +62,9 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="463dp"
+            android:layout_height="315dp"
             android:layout_alignBottom="@+id/imageView3"
-            android:baselineAligned="false"
+            android:layout_marginBottom="-314dp"
             tools:srcCompat="@drawable/ggr" />
 
     </LinearLayout>
